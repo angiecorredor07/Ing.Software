@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAO
+namespace SoftwareArboles
 {
-    public partial class Form1 : Form
+    public partial class Libres : Form
     {
-        public Form1()
+        public Libres()
         {
             InitializeComponent();
         }

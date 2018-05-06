@@ -52,6 +52,18 @@
     <Compile Include="Aprendizaje.Designer.cs">
       <DependentUpon>Aprendizaje.cs</DependentUpon>
     </Compile>
+    <Compile Include="Binarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Binarios.Designer.cs">
+      <DependentUpon>Binarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Definicion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Definicion.Designer.cs">
+      <DependentUpon>Definicion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Evaluacion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,14 +76,53 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="InOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InOrden.Designer.cs">
+      <DependentUpon>InOrden.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Libres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Libres.Designer.cs">
+      <DependentUpon>Libres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Post.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Post.Designer.cs">
+      <DependentUpon>Post.cs</DependentUpon>
+    </Compile>
     <Compile Include="Practica.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Practica.Designer.cs">
       <DependentUpon>Practica.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pre.Designer.cs">
+      <DependentUpon>Pre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Raiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Raiz.Designer.cs">
+      <DependentUpon>Raiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ternarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ternarios.Designer.cs">
+      <DependentUpon>Ternarios.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Aprendizaje.resx">
+      <DependentUpon>Aprendizaje.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
