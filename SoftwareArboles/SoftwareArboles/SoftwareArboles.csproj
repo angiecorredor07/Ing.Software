@@ -46,14 +46,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aprendizaje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Aprendizaje.Designer.cs">
+      <DependentUpon>Aprendizaje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evaluacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evaluacion.Designer.cs">
+      <DependentUpon>Evaluacion.cs</DependentUpon>
+    </Compile>
     <Compile Include="Inicio.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Practica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Practica.Designer.cs">
+      <DependentUpon>Practica.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Inicio.resx">
+      <DependentUpon>Inicio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

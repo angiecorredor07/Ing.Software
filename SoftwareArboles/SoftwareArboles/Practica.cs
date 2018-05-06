@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace SoftwareArboles
 {
-    public partial class Inicio : Form
+    public partial class Practica : Form
     {
-        public Inicio()
+        public Practica()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void link_Cerrar_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            this.Close();
         }
     }
 }
