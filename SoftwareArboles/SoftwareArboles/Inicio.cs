@@ -26,5 +26,26 @@ namespace SoftwareArboles
         {
             this.Close();
         }
+
+        private void picAprendizaje_Click(object sender, EventArgs e)
+        {
+            Aprendizaje ap = new Aprendizaje();
+            ap.Show();
+            this.Hide();
+        }
+
+        private void picPractica_Click(object sender, EventArgs e)
+        {
+            Practica p = new Practica();
+            p.Show();
+            this.Hide();
+        }
+
+        private void picEvaluacion_Click(object sender, EventArgs e)
+        {
+            Evaluacion ev = new Evaluacion();
+            ev.Show();
+            this.Hide();
+        }
     }
 }

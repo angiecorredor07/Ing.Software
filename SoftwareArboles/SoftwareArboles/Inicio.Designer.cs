@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.picAprendizaje = new System.Windows.Forms.PictureBox();
-            this.picPractica = new System.Windows.Forms.PictureBox();
-            this.picEvaluacion = new System.Windows.Forms.PictureBox();
             this.link_Cerrar = new System.Windows.Forms.LinkLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.picAprendizaje)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPractica)).BeginInit();
+            this.picEvaluacion = new System.Windows.Forms.PictureBox();
+            this.picPractica = new System.Windows.Forms.PictureBox();
+            this.picAprendizaje = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picEvaluacion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPractica)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAprendizaje)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,36 +49,12 @@
             this.label1.Text = "Software Aprendizaje de Arboles";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // picAprendizaje
-            // 
-            this.picAprendizaje.Location = new System.Drawing.Point(46, 130);
-            this.picAprendizaje.Name = "picAprendizaje";
-            this.picAprendizaje.Size = new System.Drawing.Size(144, 160);
-            this.picAprendizaje.TabIndex = 1;
-            this.picAprendizaje.TabStop = false;
-            // 
-            // picPractica
-            // 
-            this.picPractica.Location = new System.Drawing.Point(237, 130);
-            this.picPractica.Name = "picPractica";
-            this.picPractica.Size = new System.Drawing.Size(144, 160);
-            this.picPractica.TabIndex = 2;
-            this.picPractica.TabStop = false;
-            // 
-            // picEvaluacion
-            // 
-            this.picEvaluacion.Location = new System.Drawing.Point(422, 130);
-            this.picEvaluacion.Name = "picEvaluacion";
-            this.picEvaluacion.Size = new System.Drawing.Size(144, 160);
-            this.picEvaluacion.TabIndex = 3;
-            this.picEvaluacion.TabStop = false;
-            // 
             // link_Cerrar
             // 
             this.link_Cerrar.AutoSize = true;
             this.link_Cerrar.Font = new System.Drawing.Font("Gill Sans MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.link_Cerrar.LinkColor = System.Drawing.Color.Black;
-            this.link_Cerrar.Location = new System.Drawing.Point(565, 18);
+            this.link_Cerrar.Location = new System.Drawing.Point(582, 9);
             this.link_Cerrar.Name = "link_Cerrar";
             this.link_Cerrar.Size = new System.Drawing.Size(23, 23);
             this.link_Cerrar.TabIndex = 4;
@@ -86,12 +62,48 @@
             this.link_Cerrar.Text = "X";
             this.link_Cerrar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_Cerrar_LinkClicked);
             // 
+            // picEvaluacion
+            // 
+            this.picEvaluacion.BackColor = System.Drawing.Color.LightCoral;
+            this.picEvaluacion.BackgroundImage = global::SoftwareArboles.Properties.Resources.evaluacion;
+            this.picEvaluacion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picEvaluacion.Location = new System.Drawing.Point(422, 101);
+            this.picEvaluacion.Name = "picEvaluacion";
+            this.picEvaluacion.Size = new System.Drawing.Size(166, 247);
+            this.picEvaluacion.TabIndex = 3;
+            this.picEvaluacion.TabStop = false;
+            this.picEvaluacion.Click += new System.EventHandler(this.picEvaluacion_Click);
+            // 
+            // picPractica
+            // 
+            this.picPractica.BackColor = System.Drawing.Color.Goldenrod;
+            this.picPractica.BackgroundImage = global::SoftwareArboles.Properties.Resources.practica;
+            this.picPractica.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picPractica.Location = new System.Drawing.Point(237, 101);
+            this.picPractica.Name = "picPractica";
+            this.picPractica.Size = new System.Drawing.Size(164, 247);
+            this.picPractica.TabIndex = 2;
+            this.picPractica.TabStop = false;
+            this.picPractica.Click += new System.EventHandler(this.picPractica_Click);
+            // 
+            // picAprendizaje
+            // 
+            this.picAprendizaje.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.picAprendizaje.BackgroundImage = global::SoftwareArboles.Properties.Resources.aprendizaje11;
+            this.picAprendizaje.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.picAprendizaje.Location = new System.Drawing.Point(48, 101);
+            this.picAprendizaje.Name = "picAprendizaje";
+            this.picAprendizaje.Size = new System.Drawing.Size(164, 247);
+            this.picAprendizaje.TabIndex = 1;
+            this.picAprendizaje.TabStop = false;
+            this.picAprendizaje.Click += new System.EventHandler(this.picAprendizaje_Click);
+            // 
             // Inicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(614, 341);
+            this.ClientSize = new System.Drawing.Size(630, 369);
             this.Controls.Add(this.link_Cerrar);
             this.Controls.Add(this.picEvaluacion);
             this.Controls.Add(this.picPractica);
@@ -99,10 +111,11 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Inicio";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inicio";
-            ((System.ComponentModel.ISupportInitialize)(this.picAprendizaje)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picPractica)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picEvaluacion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPractica)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAprendizaje)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
